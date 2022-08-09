@@ -1,6 +1,7 @@
 :root {
     --main-color: #212121;
     --second-color: #757575;
+    --third-color: #ffffff;
     --accent-color: #2196F3;
     --background-color: #E5E5E5;
     --header-background-color: #FFFFFF;
@@ -278,6 +279,22 @@ body {
 .what-do-list {
     display: flex;
     justify-content: space-between;
+}
+.wat-do-activ {
+    position: relative;
+}
+.wat-do-activ-titel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 27px auto;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--third-color);
+    background: rgba(47, 48, 58, 0.8);
 }
 /*Our team*/
 .team {
