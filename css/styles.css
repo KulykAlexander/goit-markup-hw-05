@@ -124,6 +124,7 @@ body {
 }
 
 .main-nav-link {
+    position: relative;
     display: inline-block;
     font-weight: 500;
     font-size: 14px;
@@ -145,6 +146,16 @@ body {
 }
 .current {
     color: var(--accent-color);
+}
+.current.main-nav-link::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
 }
 .conneсtion-nav {
     display: flex;
